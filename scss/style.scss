@@ -12,6 +12,11 @@ body {
     height: 100vh;
 }
 
+:root {
+    --card_width : 373px;
+    --caed_height: 208px;
+}
+
 
 header {
     width: 80%;
@@ -93,27 +98,301 @@ main {
     .content {
         width: 80%;
         height: 100%;
-        background-color: red;
+        // background-color: red;
         position: fixed;
         right: -100%;
         bottom: 0%;
         top: 100px;
         transition: .5s ease;
+        color: white;
 
-        &:nth-child(2) {
-            background-color: green;
-        }
-        &:nth-child(3) {
-            background-color: violet;
-        }
-        &:nth-child(4) {
-            background-color: skyblue;
-        }
+        // &:nth-child(2) {
+        //     background-color: green;
+        // }
+        // &:nth-child(3) {
+        // }
+        // &:nth-child(4) {
+        //     background-color: skyblue;
+        // }
     }
 
     .activePage {
         transition: .5s ease;
         right: 0%;
+    }
+
+    .wallets {
+        margin-top: 25px;
+        display: flex;
+        // align-items: center;
+        gap: 15px;
+        .block1 {
+            width: var(--card_width);
+            height: var(--caed_height);
+            background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 200px;
+                position: absolute;
+                div {
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 100px;
+                    background-color: #140739;
+                    position: relative;
+                    top: -118px;
+                    left: 55px;
+                    z-index: 10;
+                    .first {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        /* identical to box height */
+
+                        text-transform: capitalize;
+
+                        color: #616A8B;
+                        position: relative;
+                        top: 20px;
+                        left: 20px;
+                    }
+                    p {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        position: relative;
+                        top: 20px;
+                        left: 18px;
+                    }
+                }
+            }
+        }
+
+        .block2 {
+            width: var(--card_width);
+            height: var(--caed_height);
+            background: linear-gradient(237.07deg, rgba(96, 67, 146, 0.5) -8.06%, rgba(15, 11, 56, 0.5) 96.63%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 19px;
+                text-transform: capitalize;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .nums {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .pices {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .pr {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            /* identical to box height */
+                            color: #616A8B;
+                        }
+                    }
+                    .img {
+                        width: 44px;
+                        height: 44px;
+                        background: #644696;
+                        border-radius: 50px;
+                        img {
+                            position: relative;
+                            top: 8px;
+                            left: 12px;
+                            width: 19px;
+                            height: 26px;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .block3 {
+            width: var(--card_width);
+            height: var(--caed_height);
+            background: linear-gradient(237.07deg, #6162D6 -8.06%, #0F0B38 96.63%);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 19px;
+                text-transform: capitalize;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .nums {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .pices {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .pr {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            /* identical to box height */
+                            color: #616A8B;
+                        }
+                    }
+                    .img {
+                        width: 44px;
+                        height: 44px;
+                        background: #3A3888;
+                        border-radius: 50px;
+                        img {
+                            position: relative;
+                            top: 8px;
+                            left: 12px;
+                            width: 19px;
+                            height: 26px;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .block4 {
+            width: var(--card_width);
+            height: var(--caed_height);
+            background: linear-gradient(237.07deg, #72EB38 -8.06%, #0F0B38 96.63%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 19px;
+                text-transform: capitalize;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .nums {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .pices {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .pr {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            /* identical to box height */
+                            color: #616A8B;
+                        }
+                    }
+                    .img {
+                        width: 44px;
+                        height: 44px;
+                        background: #345A38;
+                        border-radius: 50px;
+                        img {
+                            position: relative;
+                            top: 7px;
+                            left: 7px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .two_blocks{
+        display: flex;
+        gap: 25px;
+        margin-top: 25px;
+
+        .left_block {
+            width: 602px;
+            height: 459px;
+            background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .right_block {
+            padding: 20px;
+            width: 602px;
+            height: 459px;
+            background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
+            border-radius: 5px;
+            overflow-y: scroll;
+            p {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                /* identical to box height */
+
+                text-transform: capitalize;
+                height: 40px;
+                border-bottom: #32395E solid 1px;
+                margin-bottom: 20px;
+            }
+            .fortranses {
+                // overflow: auto;
+                // overflow-y: scroll;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                // height:300px;
+                overflow-y: hidden;
+                .box {
+                    background-image: url('../public/icons/trans.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 5px;
+                    height: 40px;
+                    width: 100%;
+                }
+            }
+        }
     }
 
 }
