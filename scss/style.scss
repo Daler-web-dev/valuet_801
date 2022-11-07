@@ -361,6 +361,7 @@ main {
             height: 459px;
             background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
             border-radius: 5px;
+            overflow-y: scroll;
             p {
                 font-style: normal;
                 font-weight: 600;
@@ -376,10 +377,11 @@ main {
             .fortranses {
                 // overflow: auto;
                 // overflow-y: scroll;
-                overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                // height:300px;
+                overflow-y: hidden;
                 .box {
                     background-image: url('../public/icons/trans.png');
                     background-position: center;
