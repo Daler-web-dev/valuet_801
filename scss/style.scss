@@ -396,3 +396,184 @@ main {
     }
 
 }
+
+
+
+.exchangetext {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.exchangeblock {
+    margin-top: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding-right: 32px;
+}
+
+.fromto {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #616A8B;
+    margin-bottom: 14px;
+}
+
+.exchangefrom {
+    padding: 35px 35px 31px 35px;
+    height: 256px;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency {
+    width: 110px;
+    height: 110px;
+    background-image: url(../public/images/bitcoin.png);
+    background-size: cover;
+}
+
+.select {
+    width: fit-content;
+    border: none;
+    height: 40px;
+    background-color: transparent;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.select option {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.exchangecurreny {
+    width: 100%;
+    height: 50px;
+    background: #32395E;
+    border-radius: 5px;
+    border-bottom: 2px solid #1288E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 18px;
+    margin-top: 20px;
+}
+
+.inp {
+    all: unset;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+}
+
+.currencyname {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #FFFFFF
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 32px;
+}
+
+.exchangeinfoblock {
+    height: 143px;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) -153.98%, #0F0B38 140.59%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.currencyfrominfo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.currencytext {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.currencyimg {
+    width: 65px;
+    height: 65px;
+    background-image: url(../public/images/bitcoin2.png);
+}
+
+.currencyimg2 {
+    width: 65px;
+    height: 65px;
+    background-image: url(../public/images/grc.png);
+}
+
+.exchange {
+    width: 125px;
+    height: 42px;
+    background: linear-gradient(88.43deg, #1288E8 11.5%, #0097E8 76.7%);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 40px;
+    cursor: pointer;
+}
