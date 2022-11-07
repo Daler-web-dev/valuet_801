@@ -138,14 +138,14 @@
                     <p class="fromto">From</p>
                     <div class="exchangefrom">
                         <div class="wrap">
-                            <select class="select">
-                                <option>Bitcoin</option>
+                            <select class="select" id="select" >
+                                <option value="USD" >USD</option>
                             </select>
                             <div class="currency"></div>
                         </div>
                         <div class="exchangecurreny">
                             <form name="currency">
-                                <input type="text" value="0.45234" class="inp" name="currency">
+                                <input type="text" value="0.45234" class="inp" name="currency" id="from" >
                             </form>
                             <p class="currencyname">BTC</p>
                         </div>
@@ -155,14 +155,14 @@
                     <p class="fromto">to</p>
                     <div class="exchangefrom">
                         <div class="wrap">
-                            <select class="select">
-                                <option>GridCoin</option>
+                            <select class="select selectTwo">
+                                <option value="UZS" >UZS</option>
                             </select>
                             <div class="currency"></div>
                         </div>
                         <div class="exchangecurreny">
                             <form name="currency">
-                                <input type="text" value="1.45534" class="inp" name="currency">
+                                <input type="text" value="1.45534" class="inp" name="currency" id="to" >
                             </form>
                             <p class="currencyname">GRC</p>
                         </div>
@@ -189,8 +189,10 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./modules/currencyLayer.js"></script>
 </body>
 
 </html>
