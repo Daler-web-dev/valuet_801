@@ -22,7 +22,7 @@ const labels = [
 const data = {
 	labels: labels,
 	datasets: [{
-		label: '',
+		label: ' ',
 
 		backgroundColor: ['#fff', '#018FFF', '#FAD679'],
 		borderColor: 'transparent',
@@ -39,7 +39,6 @@ const config = {
 		plugins: {
 			legend: {
 				position: 'right',
-				borderRadius: 100
 			},
 			title: {
 				display: true,
@@ -82,9 +81,27 @@ let transes = document.querySelector('.fortranses')
 
 for (let i = 0; i < 10; i++) {
 	let box = document.createElement('div')
+	let box_l = document.createElement('div')
+	let time = document.createElement('p')
+	let img = document.createElement('img')
+	let person = document.createElement('p')
+	let amount = document.createElement('p')
 	box.classList.add('box')
+	box_l.classList.add('box_l')
+	time.classList.add('time')
+	img.classList.add('img')
+	person.classList.add('person')
+	amount.classList.add('amount')
 
+	time.innerHTML = "AM 01:16"
+	person.innerHTML = "From Elon Musk"
+	amount.innerHTML = "+ 4,800"
+
+
+	img.src = "./public/icons/up.png"
 	box.src = "./public/icons/trans.png"
 
+	box_l.append(time, img, person)
+	box.append(box_l, amount)
 	transes.append(box)
 }
