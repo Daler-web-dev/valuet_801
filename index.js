@@ -105,3 +105,119 @@ for (let i = 0; i < 10; i++) {
 	box.append(box_l, amount)
 	transes.append(box)
 }
+
+// mustafa and shaxzod
+
+
+const data3 = {
+	labels: ["NOV 15", "NOV 16", "NOV 17", "NOV 18", "NOV 19", "NOV 20", 'NOV 21', "NOV 22"],
+	datasets: [{
+		label: "",
+		data: [0, 4000, 2000, 8000, 6000, 10000, 6000, 8000, 2000, 10000],
+		fill: true,
+		borderColor: '#0292E2',
+		tension: 0.5
+	}]
+};
+
+const config3 = {
+	type: 'line',
+	data: data3,
+};
+
+const lineChart3 = new Chart(
+	document.getElementById('lineChart3'),
+	config3
+);
+
+
+const SecondLabels = [
+	'2',
+	'4',
+	'6',
+	'8',
+	'10',
+	'12',
+	'14',
+];
+
+const SecondData = {
+	labels: SecondLabels,
+	datasets: [{
+		label: 'My First dataset',
+		backgroundColor: [ '#018FFF'],
+		borderColor: [ '#018FFF'],
+		weight: 0.1,
+		borderColor: '#0292E2',
+		tension: 0.5,
+		data: [14, 10, 16, 13, 15, 14, 15, 20],
+	}]
+};
+
+const SecondConfig = {
+	type: 'line',
+	data: SecondData,
+	options: {}
+};
+
+
+const mySecondChart = new Chart(
+	document.getElementById('mySecondChart'),
+	SecondConfig
+);
+
+const ThirdLabels = [
+    'Ethereum',
+    'Bitcoin',
+    'Dash',
+];
+
+const ThirdData = {
+    labels: ThirdLabels,
+    datasets: [{
+        label: 'My First dataset',
+        backgroundColor: ['#FFFFFF', '#018FFF', '#FAD679'],
+        borderColor: ['#FFFFFF', '#018FFF', '#FAD679'],
+        weight: 0.1,
+        data: [18, 64, 18],
+    }]
+};
+        
+const ThirdConfig = {
+    type: 'doughnut',
+    data: ThirdData,
+    options: {}
+};
+
+
+const myThirdChart = new Chart(
+    document.getElementById('myThirdChart'),
+    ThirdConfig
+);
+
+function createChart(canvas, chartType, labels) {
+	const data = {
+		labels: labels,
+		datasets: [{
+			label: 'My First dataset',
+			backgroundColor: ['#FFFFFF', '#018FFF', '#FAD679'],
+			borderColor: ['#FFFFFF', '#018FFF', '#FAD679'],
+			weight: 0.1,
+			data: [18, 64, 18],
+		}]
+	};
+			
+	const config = {
+		type: chartType,
+		data: data,
+		options: {}
+	};
+
+
+	const chart = new Chart(
+		document.getElementById(canvas),
+		config
+	);
+}
+
+createChart('myChartOne', 'doughnut', ['Ethereum','Bitcoin','Dash'])
