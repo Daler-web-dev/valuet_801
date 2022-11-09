@@ -34,35 +34,39 @@
                 <h1>valuet</h1>
             </center>
             <nav>
-                <a href="#" data-p="Overview" >
+                <a href="#" data-p="Overview">
                     <img src="./public/icons/overview.svg" alt="">
                     <span>Overview</span>
                 </a>
-                <a href="#" data-p="Wallets" >
+                <a href="#" data-p="Wallets">
                     <img src="./public/icons/overview.svg" alt="">
                     <span>Wallets</span>
                 </a>
-                <a href="#" data-p="Transictions" >
+                <a href="#" data-p="Transictions">
                     <img src="./public/icons/overview.svg" alt="">
                     <span>Transictions</span>
                 </a>
-                <a href="#" data-p="Exchange" >
+                <a href="#" data-p="Exchange">
                     <img src="./public/icons/overview.svg" alt="">
                     <span>Exchange</span>
+                </a>
+                <a href="#" data-p="Market">
+                    <img src="./public/icons/overview.svg" alt="">
+                    <span>Market</span>
                 </a>
             </nav>
         </aside>
 
-        <div class="content" id="Overview" >
+        <div class="content" id="Overview">
             <h1>Overview</h1>
         </div>
-        <div class="content " id="Wallets" >
+        <div class="content " id="Wallets">
             <h1>Wallets</h1>
             <div class="wallets">
                 <div class="block1">
                     <div>
                         <canvas id="myChart"></canvas>
-                        <div>          
+                        <div>
                             <p class="first">TOTAL</p>
                             <p>8,200$</p>
                         </div>
@@ -123,22 +127,80 @@
                 <div class="right_block">
                     <p class="title">Recent Transactions</p>
                     <div class="fortranses">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content" id="Transictions" >
+        <div class="content" id="Transictions">
             <h1>Transictions</h1>
         </div>
-        <div class="content" id="Exchange" >
-            <h1>Exchange</h1>
+        <div class="content" id="Exchange">
+            <h1 class="exchangetext">Exchange</h1>
+            <div class="exchangeblock">
+                <div class="exchangeleft">
+                    <p class="fromto">From</p>
+                    <div class="exchangefrom">
+                        <div class="wrap">
+                            <select class="select" id="select" >
+                                <option value="USD" >USD</option>
+                            </select>
+                            <div class="currency"></div>
+                        </div>
+                        <div class="exchangecurreny">
+                            <form name="currency">
+                                <input type="text" value="0.45234" class="inp" name="currency" id="from" >
+                            </form>
+                            <p class="currencyname">BTC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchangeright">
+                    <p class="fromto">to</p>
+                    <div class="exchangefrom">
+                        <div class="wrap">
+                            <select class="select selectTwo">
+                                <option value="UZS" >UZS</option>
+                            </select>
+                            <div class="currency"></div>
+                        </div>
+                        <div class="exchangecurreny">
+                            <form name="currency">
+                                <input type="text" value="1.45534" class="inp" name="currency" id="to" >
+                            </form>
+                            <p class="currencyname">GRC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="exchangeinfoblock">
+                    <div class="currencyfrominfo">
+                        <p class="currencytext">0.45234 BTC</p>
+                        <div class="currencyimg"></div>
+                    </div>
+                    <img src="./public/images/Arrow.png" alt="" class="arrow">
+                    <div class="currencyfrominfo">
+                        <p class="currencytext">1.45534 GRC</p>
+                        <div class="currencyimg2"></div>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <button class="exchange">Exchange</button>
+            </center>
+        </div>
+        <div class="content" id="Market">
         </div>
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./modules/currencyLayer.js"></script>
+    <script type="module" src="./modules/market.js"></script>
+
 </body>
 
 </html>
